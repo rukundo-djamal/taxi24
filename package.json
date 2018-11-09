@@ -1,0 +1,18 @@
+{
+  "name": "taxi24",
+  "version": "1.0.0",
+  "description": "Taxi24 is a new startup based in Kigali. They would like to disrupt the taxi industry in Rwanda",
+  "main": "index.js",
+  "scripts": {
+    "test": "set NODE_ENV=test&& nodemon --exec \"Mocha --recursive -R min\""
+  },
+  "author": "rukundo djamal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.10",
+    "supertest": "^3.3.0"
+  }
+}
