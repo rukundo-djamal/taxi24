@@ -14,5 +14,17 @@
     "mocha": "^5.2.0",
     "mongoose": "^5.3.10",
     "supertest": "^3.3.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rukundo-djamal/taxi24.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rukundo-djamal/taxi24/issues"
+  },
+  "homepage": "https://github.com/rukundo-djamal/taxi24"
 }
