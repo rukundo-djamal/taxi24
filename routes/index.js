@@ -19,7 +19,7 @@ module.exports = (app) => {
     ///get a driver by id
     app.get('/api/drivers/:id', DriverController.one);
     ///For a specific driver, get a list of the 3 closest drivers
-    app.get('/api/dirvers/near/:id', DriverController.nearMe);
+    app.get('/api/drivers/:id/near', DriverController.nearMe);
 
 
     ///Rider's routes

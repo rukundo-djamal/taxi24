@@ -1,6 +1,7 @@
 const Trip = require('../models/trip');
 const Invoice = require('../models/invoice');
 module.exports = {
+
     ///used to create a trip
     create(req, res, next) {
         const tripProps = req.body;
@@ -30,7 +31,6 @@ module.exports = {
                     })
             })
             .catch(next);
-
     },
     /// gives all active trips
     allActive(_, res, next) {

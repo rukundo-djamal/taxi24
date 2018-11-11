@@ -5,12 +5,10 @@ const TripSchema = new Schema({
     driver: {   
         type: Schema.Types.ObjectId,
         refs: 'driver',
-        required: true
     },
     rider:{
         type: Schema.Types.ObjectId,
         refs: 'rider',
-        required: true
     },
     complete: {
         type: Boolean,

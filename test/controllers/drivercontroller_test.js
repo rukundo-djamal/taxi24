@@ -69,4 +69,18 @@ describe('driver controller test', () => {
                 done();
             });
     });
+
+    it('GET to /api/drivers/:id/near to get a list of the 3 closest drivers', done => {
+        Driver.create({ username: "kevin", geometry: { type: 'Point', coordinates: [30.062027, -1.978176] } })
+        .then( driver => {
+            request(app)
+            .get(`/api/drivers/${driver._id}/near`)
+            .end((_, res) => {
+                assert(res.body[0].username === 'kalisa');
+                done();
+            });
+        });
+
+    });
+
 });

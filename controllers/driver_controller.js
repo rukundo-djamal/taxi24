@@ -56,6 +56,7 @@ module.exports = {
     ///For a specific driver, get a list of the 3 closest drivers
     nearMe(req, res, next) {
         const driverId = req.params.id;
+        
         Driver.findById({ _id: driverId })
             .then(driver => {
                 Driver.aggregate([
